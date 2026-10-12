@@ -127,6 +127,11 @@ CMake on MinGW-w64. The iidxio DLL needs the bemanitools submodule
 (`git submodule update --init`); `bi2xtest` and `bi2x-modextract` do not.
 Nothing from Konami is needed to build.
 
+#### Build on Linux
+You will need to install `mingw-w64-gcc`, `cmake` and `ninja` as dependencies.
+Once done installing, you may run `make build` to generate the iidxio DLL,
+which can be found in `build-win64`.
+
 ### Testing without a board
 
 `test/sim_bi2x.py` simulates the board side of the protocol (random frame
